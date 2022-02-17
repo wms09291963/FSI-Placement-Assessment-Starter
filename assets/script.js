@@ -9,9 +9,9 @@ let cc = 0 // Chocolate Chip
 let sugar = 0 // Sugar Sprinkle
 
 //reference the text
-let gbQty = document.querySelector(".qty-gb")
-let ccQty = document.querySelector(".qty-cc")
-let sugarQty=document.querySelector(".qty-sugar")
+let gbQty = document.querySelector(".Ginger Bread")
+let ccQty = document.querySelector(".Chocolate Chip")
+let sugarQty=document.querySelector(".Sugar Sprinkle")
 
 
 
