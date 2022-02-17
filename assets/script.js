@@ -10,7 +10,7 @@ let sugar = 0 // Sugar Sprinkle
 
 //reference the text
 let gbQty = document.querySelector(".qty-gb")
-let ccQty = document.querySelector(" .qty-cc")
+let ccQty = document.querySelector(".qty-cc")
 let sugarQty=document.querySelector(".qty-sugar")
 
 
@@ -35,7 +35,7 @@ credit.textContent = `Created by ${yourName}`
 gbPlusBtn.addEventListener('click', function() {
 gb = gb + 1
 
-gbQty.TextContent = "qty-gb: "+ gb
+gbQty.TextContent = gb + 1
 })
 
 // Event listener for clicks on the "+" button for cc cookie
