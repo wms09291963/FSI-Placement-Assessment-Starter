@@ -12,6 +12,7 @@ let sugar = 0 // Sugar Sprinkle
 let gbQty = document.querySelector("#qty-gb")
 let qtyCC = document.querySelector("#qty-cc")
 let qtySug=document.querySelector("#qty-sugar")
+let qtyTotal = ("qty-total")
 
 
 
@@ -35,43 +36,47 @@ credit.textContent = `Created by ${yourName}`
 gbPlusBtn.addEventListener('click', function() {
 gb = gb + 1
 
-qtyGB.textcontent = "#qty-gb:" + gb
+gbQty.textContent = gb
 })
 
 // Event listener for clicks on the "+" button for cc cookie
 ccPlusBtn.addEventListener('click', function() {
     cc = cc + 1
     
-    Qtycc.TextContent = "#add-cc: "+ cc
+    qtyCC.textContent = cc
     })
 // Event listener for clicks on the "+" button for sugar cookie
-gbPlusBtn.addEventListener('click', function() {
+sugarPlusBtn.addEventListener('click', function() {
     sugar = sugar + 1
     
-    qtySug.TextContent = "#qty-sugar: "+ sugar
+    qtySug.textContent = sugar
   })
 
     
-gbminusButton.addEventListener("click", function(){
-
-    if (gb > 0 ){
-   gb = gb-1  
-   qtyGb.textContent = "Quantity: "+ totalQuantity
-    }
-})
-
-ccminusButton.addEventListener("click", function(){
-
-    if (cc > 0 ){
-   cc = cc-1  
-   quantityText.textContent = "Quantity: " - totalQuantity
-    }
-})
-
-sugarminusButton.addEventListener("click", function(){
+sugarMinusBtn.addEventListener("click", function(){
 
     if (sugar > 0 ){
    sugar = sugar-1  
-   quantityText.textContent = "Quantity: " - totalQuantity
+
+   qtySug.textContent = sugar
     }
 })
+
+ccMinusBtn.addEventListener("click", function(){
+
+    if (cc > 0 ){
+   cc = cc-1  
+
+   qtyCC.textContent = cc
+    }
+})
+
+gbMinusBtn.addEventListener("click", function(){
+
+    if (gb > 0 ){
+   gb = gb-1 
+
+   gbQty.textContent = gb
+    }
+})
+qtyTotal.textConent=gb+cc+sugar
