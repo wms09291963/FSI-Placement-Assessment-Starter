@@ -12,7 +12,7 @@ let sugar = 0 // Sugar Sprinkle
 let gbQty = document.querySelector("#qty-gb")
 let qtyCC = document.querySelector("#qty-cc")
 let qtySug=document.querySelector("#qty-sugar")
-let qtyTotal = ("qty-total")
+let qtyTotal =document.querySelector("#qty-total")
 
 
 
@@ -37,6 +37,7 @@ gbPlusBtn.addEventListener('click', function() {
 gb = gb + 1
 
 gbQty.textContent = gb
+qtyTotal.textContent=gb+cc+sugar
 })
 
 // Event listener for clicks on the "+" button for cc cookie
@@ -44,12 +45,14 @@ ccPlusBtn.addEventListener('click', function() {
     cc = cc + 1
     
     qtyCC.textContent = cc
+    qtyTotal.textContent=gb+cc+sugar
     })
 // Event listener for clicks on the "+" button for sugar cookie
 sugarPlusBtn.addEventListener('click', function() {
     sugar = sugar + 1
     
     qtySug.textContent = sugar
+    qtyTotal.textContent=gb+cc+sugar
   })
 
     
@@ -59,6 +62,7 @@ sugarMinusBtn.addEventListener("click", function(){
    sugar = sugar-1  
 
    qtySug.textContent = sugar
+   qtyTotal.textContent=gb+cc+sugar
     }
 })
 
@@ -68,6 +72,7 @@ ccMinusBtn.addEventListener("click", function(){
    cc = cc-1  
 
    qtyCC.textContent = cc
+   qtyTotal.textContent=gb+cc+sugar
     }
 })
 
@@ -77,6 +82,6 @@ gbMinusBtn.addEventListener("click", function(){
    gb = gb-1 
 
    gbQty.textContent = gb
+   qtyTotal.textContent=gb+cc+sugar
     }
 })
-qtyTotal.textConent=gb+cc+sugar
