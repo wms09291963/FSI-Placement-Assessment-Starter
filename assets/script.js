@@ -9,9 +9,9 @@ let cc = 0 // Chocolate Chip
 let sugar = 0 // Sugar Sprinkle
 
 //reference the text
-let qtyGB = document.querySelector(".qty-gb")
-let qtyCC = document.querySelector(".qty-cc")
-let qtySug=document.querySelector(".qty-sugar")
+let gbQty = document.querySelector("#qty-gb")
+let qtyCC = document.querySelector("#qty-cc")
+let qtySug=document.querySelector("#qty-sugar")
 
 
 
@@ -35,20 +35,20 @@ credit.textContent = `Created by ${yourName}`
 gbPlusBtn.addEventListener('click', function() {
 gb = gb + 1
 
-qtyGB.textcontent = "gb:" +1
+qtyGB.textcontent = "#qty-gb:" + gb
 })
 
 // Event listener for clicks on the "+" button for cc cookie
 ccPlusBtn.addEventListener('click', function() {
     cc = cc + 1
     
-    Qtycc.TextContent = "qty-cc: "+ 1
+    Qtycc.TextContent = "#add-cc: "+ cc
     })
 // Event listener for clicks on the "+" button for sugar cookie
 gbPlusBtn.addEventListener('click', function() {
     sugar = sugar + 1
     
-    qtySug.TextContent = "qty-sugar: "+ 1
+    qtySug.TextContent = "#qty-sugar: "+ sugar
   })
 
     
